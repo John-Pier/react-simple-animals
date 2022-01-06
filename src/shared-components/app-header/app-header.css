@@ -1,0 +1,11 @@
+.app-header {
+    display: flex;
+    flex: 1;
+    background-color: #282c34;
+    flex-direction: column;
+    color: white;
+}
+
+.app-header__name {
+    font-weight: 500;
+}
