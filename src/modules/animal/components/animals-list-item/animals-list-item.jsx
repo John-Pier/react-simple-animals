@@ -1,10 +1,9 @@
 import React from "react";
 
-export function AnimalsListItem({ animal, props }) {
-    console.log(animal, props);
+export function AnimalsListItem({ animal }) {
     return (
         <div className={'app__animals-list-item'}>
-            test
+            {animal?.name}
         </div>
     )
 }

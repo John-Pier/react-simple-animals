@@ -5,19 +5,20 @@ import { Collapse } from 'antd';
 
 const { Panel } = Collapse;
 
-export function AnimalsList(props) {
-    console.log(props);
-    let animal;
+export function AnimalsList({ animals }) {
     return (
         <div className={'app__animals-list'}>
-            <h1></h1>
+            <div>Animals</div>
             <div className={'animals-list__header'}>
                 <Button className={'app_button _default'}>Hide Cats</Button>
                 <Button className={'app_button _main'}>Add Animal</Button>
             </div>
-            <Collapse className={'animals-list__inner'}>
-                {Array(10).fill(0).map((value, key) => <Panel key={key}> <AnimalsListItem key={key} animal={"animals " + Math.random()}/></Panel>)}
-            </Collapse>
+            <div>
+                {animals.map(animal => <div key={animal.id}>{animal.name}</div>)}
+            </div>
+            {/*<Collapse className={'animals-list__inner'}>*/}
+            {/*    {Array(10).fill(0).map((value, key) => <Panel key={key}> <AnimalsListItem key={key} animal={"animals " + Math.random()}/></Panel>)}*/}
+            {/*</Collapse>*/}
         </div>
     )
 }

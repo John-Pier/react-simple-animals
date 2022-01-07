@@ -1,0 +1,14 @@
+@import '~antd/dist/antd.css';
+
+.app {
+  overflow: hidden;
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}

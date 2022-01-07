@@ -1,0 +1,10 @@
+.animal-module {
+    display: flex;
+    flex: 1;
+}
+
+.animal-module:first-child {
+    border-right: 1px solid #464646;
+    padding-right: 10px;
+    margin-right: 10px;
+}

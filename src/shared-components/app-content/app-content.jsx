@@ -2,11 +2,11 @@ import React from "react";
 
 import "./app-content.css";
 
-export function AppContent({ content: Content }) {
+export function AppContent(props) {
     return (
-        <section>
-            <main>
-                <Content/>
+        <section className="app-content">
+            <main className="app-content__inner">
+                {props.children}
             </main>
         </section>
     )
