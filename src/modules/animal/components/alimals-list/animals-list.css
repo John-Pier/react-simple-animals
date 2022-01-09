@@ -1,14 +1,18 @@
-.app__animals-list {
+.animals-list {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-basis: 30%;
 }
 
 .animals-list__header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 16px;
     margin-bottom: 16px;
+}
+
+.animals-list__header-title {
+   margin-right: 20px;
 }
 
 .animals-list__inner {

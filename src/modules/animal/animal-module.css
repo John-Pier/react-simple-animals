@@ -8,3 +8,8 @@
     padding-right: 10px;
     margin-right: 10px;
 }
+
+.animal-module__buttons {
+    display: flex;
+    justify-content: flex-end;
+}
